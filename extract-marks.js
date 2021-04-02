@@ -2,6 +2,7 @@
 
 import shell from 'shelljs';
 
+import generateOmnivoxCSV from './lib/generateOmnivoxCSV.js';
 import getEvaluationFileList from './lib/getEvaluationFileList.js';
 import extractMarksFromFiles from './lib/extractMarksFromFiles.js';
 
@@ -18,10 +19,19 @@ if (!shell.test('-d', directoryName)) {
 
 const evaluationFileList = getEvaluationFileList(directoryName);
 
-console.log(`Found ${evaluationFileList.length} evaluation files:`);
+console.log(`${evaluationFileList.length} grilles d'évaluation trouvées.`);
 console.log(evaluationFileList);
 
 const marks = extractMarksFromFiles(evaluationFileList);
 
-console.log('Extracted marks:');
+console.log('Notes extraites:');
 console.log(marks);
+
+const csvData = generateOmnivoxCSV(marks);
+
+console.log('');
+console.log('Données CSV:');
+console.log('');
+
+shell.echo(csvData).to('omnivox.csv');
+console.log('Données exportées vers omnivox.csv.');
