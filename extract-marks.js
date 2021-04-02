@@ -21,4 +21,7 @@ const evaluationFileList = getEvaluationFileList(directoryName);
 console.log(`Found ${evaluationFileList.length} evaluation files:`);
 console.log(evaluationFileList);
 
-extractMarksFromFiles(evaluationFileList);
+const marks = extractMarksFromFiles(evaluationFileList);
+
+console.log('Extracted marks:');
+console.log(marks);
