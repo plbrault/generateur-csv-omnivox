@@ -1,10 +1,22 @@
 {
   "name": "script-extraction-notes",
   "type": "module",
-  "main": "extraire-notes.js",
+  "main": "extract-marks.js",
   "author": "Pier-Luc Brault <pier-luc@brault.me>",
   "private": true,
   "dependencies": {
-    "node-xlsx": "^0.16.1"
+    "node-xlsx": "^0.16.1",
+    "shelljs": "^0.8.4"
+  },
+  "scripts": {
+    "start": "node extract-marks.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0"
   }
 }
