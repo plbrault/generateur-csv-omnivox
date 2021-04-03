@@ -1,6 +1,6 @@
-# Script d'extraction de notes pour importation dans Omnivox
+# Générateur de fichier CSV pour importation de notes dans Omnivox
 
-Ce script s'adresse aux enseignant.e.s des cégeps utilisant Omnivox. Il permet d'extraire les notes pour une évaluation à partir d'un ensemble de fichiers Excel (typiquement des grilles d'évaluation) et de les regrouper dans un fichier CSV pouvant être importé directement dans Omnivox.
+Cet outil s'adresse aux enseignant.e.s des cégeps qui utilisent Omnivox. Il permet d'extraire les notes pour une évaluation à partir d'un ensemble de fichiers Excel contenant des résultats individuels (typiquement des grilles d'évaluation) et de les regrouper dans un fichier CSV pouvant être importé directement dans Omnivox.
 
 ## Prérequis
 
@@ -27,25 +27,24 @@ L'installation et l'utilisation de ce script nécessitent:
 En ligne de commande, positionnez-vous à l'emplacement de votre choix, puis exécutez la commande suivante pour télécharger le script:
 
 ```bash
-git clone https://github.com/plbrault/script-extraction-notes-omnivox.git
+git clone https://github.com/plbrault/generateur-csv-omnivox.git
 ```
 
-Un sous-répertoire `script-extraction-notes-omnivox` sera créé dans le répertoire courant.
+Un sous-répertoire `generateur-csv-omnivox` sera créé dans le répertoire courant.
 
 Positionnez-vous dans ce répertoire, puis exécutez la commande `yarn`.
 
 ## Utilisation
 
-Positionnez-vous dans le répertoire `script-extraction-notes-omnivox` créé lors de l'installation.
+Positionnez-vous dans le répertoire `generateur-csv-omnivox` créé lors de l'installation.
 
-Exécutez la commande `yarn extract EMPLACEMENT` en remplaçant `EMPLACEMENT` par l'emplacement du répertoire contenant vos fichiers Excel (qui peuvent être situés dans des sous-répertoires).
+Exécutez la commande `yarn generate-csv EMPLACEMENT` en remplaçant `EMPLACEMENT` par l'emplacement du répertoire contenant vos fichiers Excel (qui peuvent être situés dans des sous-répertoires).
 
 Le script s'exécutera et créera un fichier `omnivox.csv` dans son répertoire d'installation.
 
 Ouvrez ce fichier avec Excel ou LibreOffice Calc, puis copiez son contenu. Vous pourrez ensuite le coller à l'endroit prévu à cet effet sur Omnivox afin d'y importer les notes.
 
 ***Ce script a seulement été testé dans un environnement UNIX, mais devrait en principe fonctionner sur Windows également. Merci de m'aviser si ce n'est pas le cas.***
-
 
 ## Licence
 

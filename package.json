@@ -1,7 +1,7 @@
 {
   "name": "script-extraction-notes",
   "type": "module",
-  "main": "extract-marks.js",
+  "main": "generate-csv.js",
   "author": "Pier-Luc Brault <pier-luc@brault.me>",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "shelljs": "^0.8.4"
   },
   "scripts": {
-    "extract": "node extract-marks.js"
+    "generate-csv": "node generate-csv.js"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
