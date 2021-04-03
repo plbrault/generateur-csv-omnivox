@@ -1,6 +1,6 @@
 # Script d'extraction de notes pour importation dans Omnivox
 
-Ce script permet d'extraire les notes pour une évaluation à partir d'un ensemble de fichiers Excel et de les regrouper dans un fichier CSV pouvant être importé directement dans Omnivox.
+Ce script s'adresse aux enseignant.e.s des cégeps utilisant Omnivox. Il permet d'extraire les notes pour une évaluation à partir d'un ensemble de fichiers Excel et de les regrouper dans un fichier CSV pouvant être importé directement dans Omnivox.
 
 ## Prérequis
 
